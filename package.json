@@ -4,7 +4,9 @@
         "express": "^4.17.1"
     },
     "scripts": {
-        "build": "tsc",
+        "clean": "rm -rf ./dist/*",
+        "copy-files": "cp -r ./src/public/ ./dist/",
+        "build": "yarn clean && yarn copy-files && tsc",
         "start": "node ."
     },
     "devDependencies": {
