@@ -1,9 +1,13 @@
-import express from 'express';
+import express, { Application } from 'express';
+import gstAPI from './routes/gst/index';
 
-const app = express();
+const app: Application = express();
 const port = 5000;
-app.get('/', (_, res) => {
-    res.status(200).send('yo');
-});
+
+app.use(express.static(__dirname + '/public'));
+
+//handler for :gst api
+app.use('/gst', gstAPI);
+
 // eslint-disable-next-line no-console
 app.listen(port, () => console.log(`Running on port ${port}`));
