@@ -1,0 +1,52 @@
+site_name: gst tax invoice api
+site_url: https://gstapi.pushpendersaini.com/
+nav:
+    - index.md
+    - Getting Started: gettingStarted.md
+    - License: license.md
+plugins:
+    - search:
+          prebuild_index: true
+markdown_extensions:
+    - footnotes
+    - attr_list
+    - pymdownx.highlight:
+          linenums: false
+          linenums_style: pymdownx-inline
+    - pymdownx.superfences
+theme:
+    name: material
+    custom_dir: overrides
+    features:
+        - navigation.top
+        - navigation.instant
+        - navigation.indexes
+        - navigation.section
+        - search.suggest
+    favicon: img/favicon.ico
+    icon:
+        logo: material/library
+    language: en
+    direction: ltr
+    font:
+        text: Roboto
+        code: Roboto Mono
+    palette:
+        - scheme: slate
+          toggle:
+              icon: material/weather-sunny
+              name: Switch to light mode
+        - scheme: default
+          toggle:
+              icon: material/weather-night
+              name: Switch to dark mode
+extra:
+    generator: false
+    social:
+        - icon: fontawesome/brands/github
+          name: pushpendersaini0
+          link: https://github.com/PushpenderSaini0
+        - icon: fontawesome/brands/twitter
+          name: devnull0xa
+          link: https://twitter.com/devnull0xa
+copyright: Copyright &copy; 2021 Pushpender Saini
