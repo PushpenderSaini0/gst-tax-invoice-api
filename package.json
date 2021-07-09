@@ -7,6 +7,7 @@
         "clean": "rm -rf ./dist/*",
         "docs-build" : "mkdocs build -q -f src/public/config.yml -d ../../dist/public/",
         "build": "yarn clean && yarn docs-build && tsc",
+        "build-prod" :"yarn clean && tsc",
         "start": "node ."
     },
     "devDependencies": {
