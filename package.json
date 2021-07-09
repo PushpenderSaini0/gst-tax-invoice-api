@@ -5,8 +5,8 @@
     },
     "scripts": {
         "clean": "rm -rf ./dist/*",
-        "copy-files": "cp -r ./src/public/ ./dist/",
-        "build": "yarn clean && yarn copy-files && tsc",
+        "docs-build" : "mkdocs build -q -f src/public/config.yml -d ../../dist/public/",
+        "build": "yarn clean && yarn docs-build && tsc",
         "start": "node ."
     },
     "devDependencies": {
