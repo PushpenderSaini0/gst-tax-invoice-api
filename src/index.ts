@@ -6,6 +6,10 @@ const port = 5000;
 
 app.use(express.static(__dirname + '/public'));
 
+//template engine
+app.set('view engine', 'pug');
+app.set('views', __dirname + '/view');
+
 //json-parser
 app.use(express.json());
 

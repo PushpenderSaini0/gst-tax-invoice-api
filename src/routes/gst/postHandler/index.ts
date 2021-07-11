@@ -1,7 +1,8 @@
 import { Request, Response } from 'express';
+import pdfCompiler from '../../../util/pdfCompiler';
 
 const postHandler = (req: Request, res: Response): void => {
-    res.status(200).send(req.body);
+    pdfCompiler(req, res);
 };
 
 export default postHandler;
