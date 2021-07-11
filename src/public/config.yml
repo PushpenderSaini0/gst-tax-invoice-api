@@ -1,5 +1,8 @@
 site_name: gst tax invoice api
 site_url: https://gstapi.pushpendersaini.com/
+repo_url: https://github.com/PushpenderSaini0/gst-tax-invoice-api
+repo_name: gst-tax-invoice-api
+
 nav:
     - index.md
     - Getting Started: gettingStarted.md
