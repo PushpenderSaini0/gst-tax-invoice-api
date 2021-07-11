@@ -1,5 +1,12 @@
 html
-  head
-    title= title
   body
-    h1= message
+    table
+      tr
+        th Product Name
+        th Quantity
+        th Price
+      each item in items
+        tr
+            td #{item.name}
+            td #{item.qt}
+            td #{item.price}
