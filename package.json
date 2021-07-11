@@ -1,13 +1,12 @@
 {
     "main": "dist/index.js",
     "dependencies": {
-        "express": "^4.17.1"
+        "express": "^4.17.1",
+        "pug": "^3.0.2"
     },
     "scripts": {
-        "clean": "rm -rf ./dist/*",
-        "docs-build" : "mkdocs build -q -f src/public/config.yml -d ../../dist/public/",
-        "build": "yarn clean && yarn docs-build && tsc",
-        "build-prod" :"yarn clean && tsc",
+        "build": "./script/build.sh",
+        "build-prod": "./script/build-prod.sh",
         "start": "node ."
     },
     "devDependencies": {
