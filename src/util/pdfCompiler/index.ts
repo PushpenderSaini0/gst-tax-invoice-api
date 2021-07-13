@@ -18,9 +18,8 @@ const sampleData = [
     }
 ];
 
-const pdfCompiler = (req: Request, res: Response): string => {
+const pdfCompiler = (req: Request, res: Response): void => {
     res.render('basic', { items: sampleData });
-    return req.body;
 };
 
 export default pdfCompiler;
